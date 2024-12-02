@@ -1,0 +1,11 @@
+{
+	"vue": {
+    "prefix": "vue",
+    "body": [
+      "<script setup>\n</script>",
+      "<template>\n  <div></div>\n</template>",
+      "<style scoped></style>"
+    ],
+    "description": "vue init template"
+  }
+}
