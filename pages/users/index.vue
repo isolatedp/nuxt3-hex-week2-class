@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const users = ref([]);
+const users = ref<number[]>([]);
 for (let i = 1; i < 11; i++) {
   users.value.push(i);
 }

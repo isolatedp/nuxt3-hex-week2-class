@@ -7,17 +7,19 @@ const innerFlag = computed(
 );
 </script>
 <template>
-  <nav>
-    <NuxtLink to="/about/a">A</NuxtLink>&nbsp;|&nbsp;
-    <NuxtLink to="/about/b">B</NuxtLink>
-    <span v-if="innerFlag"
-      >&nbsp;|&nbsp;
-      <NuxtLink to="/about">Back</NuxtLink>
-    </span>
-  </nav>
   <div>
-    <p>Current Route: {{ currentRoute }}</p>
-    <NuxtPage />
+    <nav>
+      <NuxtLink to="/about/a">A</NuxtLink>&nbsp;|&nbsp;
+      <NuxtLink to="/about/b">B</NuxtLink>
+      <span v-if="innerFlag"
+        >&nbsp;|&nbsp;
+        <NuxtLink to="/about">Back</NuxtLink>
+      </span>
+    </nav>
+    <div>
+      <p>Current Route: {{ currentRoute }}</p>
+      <NuxtPage />
+    </div>
   </div>
 </template>
 <style scoped lang="scss"></style>
